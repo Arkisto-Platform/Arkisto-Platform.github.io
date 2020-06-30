@@ -9,15 +9,21 @@
     <link rel="stylesheet" href="/css/prism-base16-monokai.dark.css">
     <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Arkisto">
     <style>
+
+
+  
 .row {
   display: flex;
+  align-content: space-between;
 }
 
 .navcolumn {
-  flex: 30%;
+  flex: 25%;
+
 }
 .contentcol {
-  flex: 60%;
+  flex: 50%;
+  margin: 0 50px;
 }
 
 
@@ -28,46 +34,45 @@
     <header>
       <h1 class="home"><a href="/">Arkisto</a></h1>
       <ul class="nav">
-        <li class="nav-item"><a href="/about/">About</a></li>
         <li class="nav-item nav-item-active"><a href="/posts/">Archive</a></li>
         <li class="nav-item"><a href="/case-studies/">Case Studies</a></li>
         <li class="nav-item"><a href="/use-cases/">Use Cases</a></li>
-        <li class="nav-item"><a href="/tools/">Tools</a></li>
         <li class="nav-item"><a href="/standards/">Standards</a></li>
+        <li class="nav-item"><a href="/tools/">Tools</a></li>
       </ul>
     </header>
 
     <main class="tmpl-home">
     <div class="row">
        <div class="navcolum">
-          <ul><li><a href="/about/">About</a></li>
-<li><a href="/posts/">Archive</a></li>
+          <ul><li><a href="/posts/">Archive</a></li>
 <li><a href="/case-studies/">Case Studies</a><ul><li><a href="/case-studies/paradisec/">PARADISEC</a></li>
 <li><a href="/case-studies/uts-repo/">UTS Data</a></li>
 <li><a href="/case-studies/uts-grants/">Grants</a></li>
 <li><a href="/case-studies/public-history/">UTS Public History data</a></li></ul></li>
 <li><a href="/use-cases/">Use Cases</a><ul><li><a href="/use-cases/repo/">Repository Export</a></li></ul></li>
-<li><a href="/tools/">Tools</a><ul><li><a href="/tools/description-tools/">Data Description</a></li>
-<li><a href="/tools/capture-tools/">Data Import</a></li>
-<li><a href="/standards/ro-crate/">Packaging</a></li></ul></li>
 <li><a href="/standards/">Standards</a><ul><li><a href="/standards/ocfl/">Storage</a></li>
-<li><a href="/standards/arcp/">Identifiers</a></li></ul></li></ul>
+<li><a href="/standards/ro-crate/">Packaging</a></li>
+<li><a href="/standards/arcp/">Identifiers</a></li></ul></li>
+<li><a href="/tools/">Tools</a><ul><li><a href="/tools/description-tools/">Data Description</a></li>
+<li><a href="/tools/capture-tools/">Data Import</a></li></ul></li></ul>
       </div>
-      <div class="contentcol">
+      <div class="contentcol"  > 
+
       
 <p> Arkisto is a scaleable, standards based platform for sustainable data. Built
 on top of Research Object Crate (RO-Crate) and the Oxford Common Filesystem
 Layout (OCFL) Arkisto enables research services to support diverse research
-domains ranging linguistics to bioinformatics.
+domains ranging from linguistics to bioinformatics as well as
+discipline-agnostic repositories such as institutional data repositories.
 
-
+<h1 class="banner">Say goodbye to messy data migration</h1>
 
 <p>The basis of Arkisto is that the long-term preservability of
-well-described data is *always* the first consideration - that data on an
+well-described data is <b>always</b> the first consideration - that data on an
 Arkisto deployment is alway available on disc (or object storage) with a
 complete description _independently_ of any services, such as websites or APIs.
-This is an example of a data commons, and tests this notion by incorporating a
-range of datatypes from diverse disciplinary communities.
+
 
 <p>
 Once the data is safe and well described, Arkisto has a flexible model for how
@@ -84,8 +89,7 @@ data can be accessed using a variety of services:
    storage layer.</li>
 
 
-<li>  Validation and preservation services at the data storage layer. There are
-   currently very few of these.</li>
+<li>  Validation and preservation services at the data storage layer.</li>
 
 
 </ul>
