@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://myurl.com/posts/firstpost/</loc>
+    <lastmod>2018-05-01</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://myurl.com/posts/secondpost/</loc>
+    <lastmod>2018-07-04</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://myurl.com/posts/thirdpost/</loc>
+    <lastmod>2018-08-24</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://myurl.com/posts/fourthpost/</loc>
+    <lastmod>2018-09-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://myurl.com/about/</loc>
+    <lastmod>2020-06-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://myurl.com/posts/</loc>
+    <lastmod>2020-06-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://myurl.com/page-list/</loc>
+    <lastmod>2020-06-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://myurl.com/tags/</loc>
+    <lastmod>2020-06-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://myurl.com/tags/second-tag/</loc>
+    <lastmod>2020-06-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://myurl.com/tags/another-tag/</loc>
+    <lastmod>2020-06-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://myurl.com/tags/number-2/</loc>
+    <lastmod>2020-06-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://myurl.com/use-cases/</loc>
+    <lastmod>2020-06-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://myurl.com/use-cases/repo/</loc>
+    <lastmod>2020-06-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://myurl.com/</loc>
+    <lastmod>2020-06-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://myurl.com/case-studies/</loc>
+    <lastmod>2020-06-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://myurl.com/case-studies/paradisec/</loc>
+    <lastmod>2020-06-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://myurl.com/case-studies/uts-repo/</loc>
+    <lastmod>2020-06-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://myurl.com/case-studies/uts-grants/</loc>
+    <lastmod>2020-06-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://myurl.com/case-studies/public-history/</loc>
+    <lastmod>2020-06-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://myurl.com/tools/</loc>
+    <lastmod>2020-06-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://myurl.com/tools/capture-tools/</loc>
+    <lastmod>2020-06-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://myurl.com/tools/description-tools/</loc>
+    <lastmod>2020-06-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://myurl.com/standards/</loc>
+    <lastmod>2020-06-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://myurl.com/standards/ocfl/</loc>
+    <lastmod>2020-06-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://myurl.com/standards/ro-crate/</loc>
+    <lastmod>2020-06-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://myurl.com/standards/arcp/</loc>
+    <lastmod>2020-06-30</lastmod>
+  </url>
+</urlset>
