@@ -87,11 +87,6 @@
   </url>
   
   <url>
-    <loc>https://myurl.com/standards/</loc>
-    <lastmod>2020-06-30</lastmod>
-  </url>
-  
-  <url>
     <loc>https://myurl.com/standards/ocfl/</loc>
     <lastmod>2020-06-30</lastmod>
   </url>
@@ -123,6 +118,11 @@
   
   <url>
     <loc>https://myurl.com/use-cases/repo/</loc>
+    <lastmod>2020-06-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://myurl.com/standards/</loc>
     <lastmod>2020-06-30</lastmod>
   </url>
 </urlset>
