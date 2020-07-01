@@ -4,99 +4,132 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tools - Data Capture and export</title>
-    <meta name="Description" content="Arkisto is a .">
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/prism-base16-monokai.dark.css">
-    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Arkisto">
-    <style>
-
-
-  
-.row {
-  display: flex;
-  align-content: space-between;
-}
-
-.navcolumn {
-  flex: 25%;
-  font-size: larger;
-
-}
-.contentcol {
-  flex: 50%;
-  margin: 0 50px;
-}
-
-
-    </style>
- 
+    <meta name="Description" content="">
+    <link rel="stylesheet" href="/assets/tailwind.css" />
+    <link rel="stylesheet" href="/assets/site.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
+    <link rel="alternate" href="." type="application/atom+xml" title="">
   </head>
-  <body>
+  <body class="bg-gray-200 text-xl text-gray-800 font-light">
     <header>
-      <h1 class="home"><a href="/">Arkisto</a></h1>
-      <ul class="nav">
-        <li class="nav-item"><a href="/posts/">Archive</a></li>
-        <li class="nav-item"><a href="/case-studies/">Case Studies</a></li>
-        <li class="nav-item"><a href="/use-cases/">Use Cases</a></li>
-        <li class="nav-item"><a href="/tools/">Tools</a></li>
-        <li class="nav-item"><a href="/standards/">Standards</a></li>
-      </ul>
+      <div class="flex flex-row space-x-4 my-2 p-4 text-2xl">
+        <div class="pl-2 font-bold"><a href="/">Arkisto</a></div>
+            <div class=" hover:text-orange-400">
+              <a href="/case-studies/">Case Studies</a>
+            </div>
+            <div class=" hover:text-orange-400">
+              <a href="/use-cases/">Use Cases</a>
+            </div>
+            <div class=" hover:text-orange-400">
+              <a href="/standards/">Standards</a>
+            </div>
+            <div class=" hover:text-orange-400">
+              <a href="/tools/">Tools</a>
+            </div>
+        </ul>
+      </div>
     </header>
 
-    <main class="tmpl-post">
-    <div class="row">
-       <div class="navcolum">
-          <ul><li><a href="/posts/">Archive</a></li>
-<li><a href="/case-studies/">Case Studies</a><ul><li><a href="/case-studies/paradisec/">PARADISEC</a></li>
-<li><a href="/case-studies/uts-repo/">UTS Data</a></li>
-<li><a href="/case-studies/uts-grants/">Grants</a></li>
-<li><a href="/case-studies/public-history/">UTS Public History data</a></li></ul></li>
-<li><a href="/use-cases/">Use Cases</a><ul><li><a href="/use-cases/repo/">Repository Export</a></li></ul></li>
-<li><a href="/tools/">Tools</a><ul><li><a href="/tools/description-tools/">Data Description</a></li>
-<li><a href="/tools/capture-tools/">Data Import</a></li></ul></li>
-<li><a href="/standards/">Standards</a><ul><li><a href="/standards/ocfl/">Storage</a></li>
-<li><a href="/standards/ro-crate/">Packaging</a></li>
-<li><a href="/standards/arcp/">Identifiers</a></li></ul></li></ul>
+    <main class="text-lg">
+      <div class="flex flex-row py-4 px-8">
+        <div class="w-1/3 md:w-1/4 lg:w-1/5">
+            
+
+
+
+
+  <div 
+    class=" hover:text-orange-400"
+    >
+    <a href="/case-studies/">Case Studies</a>
+  </div>
+    
+        <div class=" pl-4 text-base my-1  hover:text-orange-400">
+            <a href="/case-studies/paradisec/">PARADISEC</a></div>
+    
+        <div class=" pl-4 text-base my-1  hover:text-orange-400">
+            <a href="/case-studies/uts-repo/">UTS Data</a></div>
+    
+        <div class=" pl-4 text-base my-1  hover:text-orange-400">
+            <a href="/case-studies/uts-grants/">Grants</a></div>
+    
+        <div class=" pl-4 text-base my-1  hover:text-orange-400">
+            <a href="/case-studies/public-history/">UTS Public History data</a></div>
+    
+
+  <div 
+    class=" hover:text-orange-400"
+    >
+    <a href="/use-cases/">Use Cases</a>
+  </div>
+    
+        <div class=" pl-4 text-base my-1  hover:text-orange-400">
+            <a href="/use-cases/repo/">Repository Export</a></div>
+    
+
+  <div 
+    class=" hover:text-orange-400"
+    >
+    <a href="/standards/">Standards</a>
+  </div>
+    
+        <div class=" pl-4 text-base my-1  hover:text-orange-400">
+            <a href="/standards/ocfl/">Storage</a></div>
+    
+        <div class=" pl-4 text-base my-1  hover:text-orange-400">
+            <a href="/standards/ro-crate/">Packaging</a></div>
+    
+        <div class=" pl-4 text-base my-1  hover:text-orange-400">
+            <a href="/standards/arcp/">Identifiers</a></div>
+    
+
+  <div 
+    class=" hover:text-orange-400"
+    >
+    <a href="/tools/">Tools</a>
+  </div>
+    
+        <div class=" pl-4 text-base my-1  hover:text-orange-400">
+            <a href="/tools/description-tools/">Data Description</a></div>
+    
+        <div class="text-orange-600 pl-4 text-base my-1  hover:text-orange-400">
+            <a href="/tools/capture-tools/">Data Import</a></div>
+    
+
+
+
+
+        </div>
+        <div class="w-2/3 md:w-3/4 lg:w-4/5"> 
+            <div class="flex flex-row space-x-6">
+    <div class="pt-2">
+        <a href="/"><i class="fas fa-arrow-left"></i>&nbsp;Home</a>
+    </div>
+    <div class="text-3xl text-orange-600 font-light">Tools - Data Capture and export</div>
+</div>
+
+
+<div class="px-4 py-2">
+    <p class="my-4">There are a wide variety of tools for <em>exporting</em> data into the standards-based Arkisto world from a variety of data sources so that data can be stored in Standards-based sustainable format.</p>
+<h1 id="repository-export-to-ro-crate-tools" class="text-2xl font-bold">Repository export to RO-Crate tools <a class="direct-link text-orange-600 hover:underline" href="#repository-export-to-ro-crate-tools">#</a></h1>
+<h2 id="omeka" class="text-1xl font-semibold">Omeka <a class="direct-link text-orange-600 hover:underline" href="#omeka">#</a></h2>
+<p class="my-4">Status: Working scripts that need updating to the latest version of RO-Crate.</p>
+<p class="my-4">This <a href="https://github.com/UTS-eResearch/omeka-datacrate-tools" class="text-orange-600 hover:underline">git repository</a> has scripts for exporting data from the widely used Omeka Classic and Omeka S repsitory/CMS tools into RO-Crate format. The reference to &quot;datacrate&quot; is to a previous version of the standard.</p>
+<h2 id="heurist" class="text-1xl font-semibold">Heurist <a class="direct-link text-orange-600 hover:underline" href="#heurist">#</a></h2>
+<p class="my-4">Status: Work in progress</p>
+<p class="my-4">This <a href="https://github.com/UTS-eResearch/heurist2ro-cratecode" class="text-orange-600 hover:underline">git repository</a> houses code that exports Heurist databased into RO-Crate.</p>
+<h2 id="dspace" class="text-1xl font-semibold">Dspace <a class="direct-link text-orange-600 hover:underline" href="#dspace">#</a></h2>
+<p class="my-4">Status: Proof of concept</p>
+
+</div>
+
+
+
+
+        </div>
       </div>
-      <div class="contentcol"  > 
-
-      <h1>Tools - Data Capture and export</h1>
-
-<p>There are a wide variety of tools for <em>exporting</em> data into the standards-based Arkisto world from a variety of data sources so that data can be stored in Standards-based sustainable format.</p>
-<h1 id="repository-export-to-ro-crate-tools">Repository export to RO-Crate tools <a class="direct-link" href="#repository-export-to-ro-crate-tools">#</a></h1>
-<h2 id="omeka">Omeka <a class="direct-link" href="#omeka">#</a></h2>
-<p>Status: Working scripts that need updating to the latest version of RO-Crate.</p>
-<p>This <a href="https://github.com/UTS-eResearch/omeka-datacrate-tools">git repository</a> has scripts for exporting data from the widely used Omeka Classic and Omeka S repsitory/CMS tools into RO-Crate format. The reference to &quot;datacrate&quot; is to a previous version of the standard.</p>
-<h2 id="heurist">Heurist <a class="direct-link" href="#heurist">#</a></h2>
-<p>Status: Work in progress</p>
-<p>This <a href="https://github.com/UTS-eResearch/heurist2ro-cratecode">git repository</a> houses code that exports Heurist databased into RO-Crate.</p>
-<h2 id="dspace">Dspace <a class="direct-link" href="#dspace">#</a></h2>
-<p>Status: Proof of concept</p>
-
-
-
-
-
-
-
-
-
-
-
-<p><a href="/">← Home</a></p>
-
-
-<p><a href="/">← Home</a></p>
-
-    </div>
-    </div>
-   
-
-
     </main>
 
     <footer></footer>
-
-    <!-- Current page: /tools/capture-tools/ -->
   </body>
 </html>
