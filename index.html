@@ -1,165 +1,233 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arkisto</title>
-    <meta name="Description" content="">
-    <link rel="stylesheet" href="/assets/tailwind.css" />
-    <link rel="stylesheet" href="/assets/site.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
-    <link rel="alternate" href="." type="application/atom+xml" title="">
-  </head>
-  <body class="bg-gray-200 text-xl text-gray-800 font-light">
-    <header>
-      <div class="flex flex-row space-x-4 my-2 p-4 text-2xl">
-        <div class="pl-2 font-bold"><a href="/">Arkisto</a></div>
-            <div class=" hover:text-orange-400">
-              <a href="/case-studies/">Case Studies</a>
-            </div>
-            <div class=" hover:text-orange-400">
-              <a href="/use-cases/">Use Cases</a>
-            </div>
-            <div class=" hover:text-orange-400">
-              <a href="/standards/">Standards</a>
-            </div>
-            <div class=" hover:text-orange-400">
-              <a href="/tools/">Tools</a>
-            </div>
-        </ul>
-      </div>
-    </header>
-
-    <main class="text-lg">
-      <div class="flex flex-row py-4 px-8">
-        <div class="w-1/3 md:w-1/4 lg:w-1/5">
-            
-
-
-
-
-  <div 
-    class=" hover:text-orange-400"
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Arkisto</title>
+        <meta
+            name="Description"
+            content=""
+        />
+        <link rel="stylesheet" href="/assets/tailwind.css" />
+        <link rel="stylesheet" href="/assets/site.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+        />
+        <link
+            rel="alternate"
+            href="."
+            type="application/atom+xml"
+            title=""
+        />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+        </style>
+    </head>
+    <body
+        class="theme-text-paragraph theme-bg-primary font-light text-lg lg:text-2xl"
     >
+        <header class="px-4 block md:hidden">
+            <div class="flex flex-row space-x-4 my-2">
+                <div
+                    class="text-xl md:text-5xl font-light tracking-wide"
+                    style="font-family: 'Audiowide', cursive;"
+                >
+                    <a href="/">arkisto</a>
+                </div>
+                <div class="flex-grow"></div>
+                <div>
+                    <a href="/index-page"><i class="fas fa-bars"></i></a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="flex flex-row h-screen">
+                <div
+                    class="py-6 px-4 hidden md:block md:w-1/4 lg:w-1/5 flex flex-col bg-green-200"
+                >
+                    <div
+                        class="py-4 text-lg md:text-3xl lg:text-4xl font-light tracking-wide cursor-pointer text-center"
+                        style="font-family: 'Audiowide', cursive;"
+                    >
+                        <a href="/">arkisto</a>
+                    </div>
+                      
+<div
+    class=" hover:text-orange-500 mt-2 lg:mt-6"
+>
+    <a href="/why/">Why Arkisto</a>
+</div>
+ 
+<div
+    class=" hover:text-orange-500 mt-2 lg:mt-6"
+>
     <a href="/case-studies/">Case Studies</a>
-  </div>
-    
-        <div class=" pl-4 text-base my-1  hover:text-orange-400">
-            <a href="/case-studies/paradisec/">PARADISEC</a></div>
-    
-        <div class=" pl-4 text-base my-1  hover:text-orange-400">
-            <a href="/case-studies/uts-repo/">UTS Data</a></div>
-    
-        <div class=" pl-4 text-base my-1  hover:text-orange-400">
-            <a href="/case-studies/uts-grants/">Grants</a></div>
-    
-        <div class=" pl-4 text-base my-1  hover:text-orange-400">
-            <a href="/case-studies/public-history/">UTS Public History data</a></div>
-    
-
-  <div 
-    class=" hover:text-orange-400"
-    >
-    <a href="/use-cases/">Use Cases</a>
-  </div>
-    
-        <div class=" pl-4 text-base my-1  hover:text-orange-400">
-            <a href="/use-cases/repo/">Repository Export</a></div>
-    
-
-  <div 
-    class=" hover:text-orange-400"
-    >
-    <a href="/standards/">Standards</a>
-  </div>
-    
-        <div class=" pl-4 text-base my-1  hover:text-orange-400">
-            <a href="/standards/ocfl/">Storage</a></div>
-    
-        <div class=" pl-4 text-base my-1  hover:text-orange-400">
-            <a href="/standards/ro-crate/">Packaging</a></div>
-    
-        <div class=" pl-4 text-base my-1  hover:text-orange-400">
-            <a href="/standards/arcp/">Identifiers</a></div>
-    
-
-  <div 
-    class=" hover:text-orange-400"
-    >
-    <a href="/tools/">Tools</a>
-  </div>
-    
-        <div class=" pl-4 text-base my-1  hover:text-orange-400">
-            <a href="/tools/description-tools/">Data Description</a></div>
-    
-        <div class=" pl-4 text-base my-1  hover:text-orange-400">
-            <a href="/tools/capture-tools/">Data Import</a></div>
-    
-
-
-
-
-        </div>
-        <div class="w-2/3 md:w-3/4 lg:w-4/5"> 
-            
-
-<div class="flex flex-col space-y-4">
-   <p class="text-4xl tracking-wide my-8 text-left font-bold">
-Arkisto </p>
-   <p>
-   Humans being endlessly creative, they produce research materials in a range of formats, with a range of software.
-While this may work for the lifetime of a research project, there needs to be a way of capturing research output and allowing it to be found and accessed in future, with appropriate licensing arrangements.
-</p>
-<p>Arkisto builds pathways from a range of existing data formats and captures the knowledge encoded in the software and data, making it explicit and keeping metadata together with the data.
-Arkisto is also the locus for training in using better methods so that data is more easily curated at the end of a research project.</p>
-
-<p>Arkisto is a scaleable, standards based platform for sustainable data. It is built
-      on top of <a href="https://researchobject.github.io/ro-crate/">Research Object Crate (RO-Crate)</a> and the <a href="https://ocfl.io/">Oxford Common File System
-      Layout (OCFL)</a> and enables research services to support diverse research
-      domains. Current examples range from linguistics to bioinformatics as well as
-      discipline-agnostic repositories such as institutional data repositories.
-   </p>
-
-   <p class="text-left text-4xl font-bold">Say goodbye to messy data migration</p>
-
-   <p>The basis of Arkisto is that the long-term preservability of
-   well-described data is <em>always</em> the first consideration - that data on an
-   Arkisto deployment is alway available on disc (or object storage) with a
-   complete description <em>independently</em> of any services, such as websites or APIs.
-
-   Once the data is safe and well described, Arkisto has a flexible model for how
-   data can be accessed using a variety of services:
-
-   <ul class="list-disc">
-      <li> Human and machine oriented access-controlled data portals that make data
-         available by searching and browsing and by API. There are currently two
-         established portal projects and a number of active developments.
-      </li>
-
-      <li> Direct access by trusted services which can read and write data from the
-      storage layer.</li>
-      <li>  Validation and preservation services at the data storage layer.</li>
-   </ul>
-
-<br/>
-<p> Arkisto has provided a curated dataset from existing research repositories, for example, the 90 terabytes of data held by Pacific and Regional Archive for Digital Sources in Endangered Cultures (PARADISEC), now completely described in Arkisto (thanks to a small grant from the ARDC) and ready for development of microservices to complete the transition from a monolithic catalog. </p>
-<p>A major driver for Arkisto are collections of research material that are no longer looked after and some current examples are:</p>   <ul class="list-disc">
-<li>The eScholarship Research Centre, University of Melbourne. The ESRC has nearly 1,000 projects, mostly stored in MS Access databases, but with html versions generated from those databases. As the ESRC has been closed in 2020, the pressing issue is what to do to preserve all of this valuable scholarship.</li>
-<li>Omeka repositories</li>
-<li>FMPro catalogs, e.g. at the <a href="https://arts.unimelb.edu.au/grimwade-centre-for-cultural-materials-conservation">Grimwade Centre for Cultural Materials Conservation</a> which catalogs hundreds of Indigenous artworks. Data stored in this kind of proprietary format needs to be exported into meaningful output and Arkisto addresses this need.</li>
-<li>AIATSIS</li></ul>
-
-<p class="text-4xl tracking-wide my-8 text-left font-bold">
-Why Arkisto?</p>
-
-<p>It is increasingly apparent that research projects need to provide for their endings before they begin. A project run out of the <a href="https://scip.unimelb.edu.au/">Social and Cultural Informatics Platform</a> at the University of Melbourne is the New Life for Digital Research (NeLDiR) which is using Arkisto's methods to preserve research outputs. NeLDiR is inspired by <a href="https://www.kdl.kcl.ac.uk/our-work/archiving-sustainability/">existing work</a> done at Kings College (London) on rescuing expired research projects,
-or the work of the Canadian <a href="https://projectendings.github.io/resources/">Project Endings</a>, both of which are leading the way, and we need to be engaging with this critical issue in Australia. </p>
 </div>
 
-        </div>
-      </div>
-    </main>
+<div
+    class=" pl-4 text-base my-1 hover:text-orange-500"
+>
+    <a href="/case-studies/paradisec/">PARADISEC</a>
+</div>
 
-    <footer></footer>
-  </body>
+<div
+    class=" pl-4 text-base my-1 hover:text-orange-500"
+>
+    <a href="/case-studies/uts-repo/">UTS Data</a>
+</div>
+
+<div
+    class=" pl-4 text-base my-1 hover:text-orange-500"
+>
+    <a href="/case-studies/uts-grants/">Grants</a>
+</div>
+
+<div
+    class=" pl-4 text-base my-1 hover:text-orange-500"
+>
+    <a href="/case-studies/public-history/">UTS Public History data</a>
+</div>
+ 
+<div
+    class=" hover:text-orange-500 mt-2 lg:mt-6"
+>
+    <a href="/standards/">Standards</a>
+</div>
+
+<div
+    class=" pl-4 text-base my-1 hover:text-orange-500"
+>
+    <a href="/standards/ocfl/">Storage</a>
+</div>
+
+<div
+    class=" pl-4 text-base my-1 hover:text-orange-500"
+>
+    <a href="/standards/ro-crate/">Packaging</a>
+</div>
+
+<div
+    class=" pl-4 text-base my-1 hover:text-orange-500"
+>
+    <a href="/standards/arcp/">Identifiers</a>
+</div>
+ 
+<div
+    class=" hover:text-orange-500 mt-2 lg:mt-6"
+>
+    <a href="/tools/">Tools</a>
+</div>
+
+<div
+    class=" pl-4 text-base my-1 hover:text-orange-500"
+>
+    <a href="/tools/description-tools/">Data Description</a>
+</div>
+
+<div
+    class=" pl-4 text-base my-1 hover:text-orange-500"
+>
+    <a href="/tools/capture-tools/">Data Import</a>
+</div>
+  
+
+                </div>
+                <div class="mb-8 py-6 px-4 md:w-3/4 lg:w-4/5 overflow-scroll">
+                    
+<div class="flex flex-col">
+    <div
+        class="flex flex-col text-center md:flex-row lg:items-center md:my-8 lg:my-16"
+    >
+        <div class="w-full md:w-1/2">
+            <img src="/assets/images/arkisto.svg" />
+        </div>
+        <div class="w-full md:w-1/2">
+            <div class="text-xl lg:text-4xl lg:px-8">
+                A scaleable, standards based platform for sustainable data.
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-col lg:flex-row my-2">
+        <div class="p-8 bg-gray-200 rounded w-full lg:mx-2 lg:w-1/2">
+            Arkisto builds pathways from existing data formats to capture
+            encoded knowledge. Arkisto makes this knowledge explicit by keeping
+            metadata together with the data.
+        </div>
+
+        <div
+            class="p-8 bg-gray-200 rounded w-full my-4 lg:my-0 lg:mx-2 lg:w-1/2"
+        >
+            Arkisto is the locus for training in using better methods so that
+            data is more easily curated at the end of a research project.
+        </div>
+    </div>
+
+    <div class="flex flex-col lg:flex-row mb-2">
+        <div class="p-8 bg-gray-200 rounded w-full lg:mx-2 lg:w-1/2">
+            Arkisto is built on top of
+            <a
+                class="text-orange-600 hover:text-orange-500"
+                target="_blank"
+                href="https://researchobject.github.io/ro-crate/"
+                >Research Object Crate (RO-Crate)</a
+            >
+            and the
+            <a
+                class="text-orange-600 hover:text-orange-500"
+                target="_blank"
+                href="https://ocfl.io/"
+                >Oxford Common File System Layout (OCFL)</a
+            >. These technologies enable services to support diverse research
+            domains. Current examples range from linguistics to bioinformatics
+            as well as discipline-agnostic repositories such as institutional
+            data repositories.
+        </div>
+
+        <div
+            class="p-8 bg-gray-200 rounded w-full my-4 lg:my-0 lg:mx-2 lg:w-1/2 text-center lg:text-4xl flex flex-col justify-center"
+        >
+            With Arkisto there is no messy data migration.
+        </div>
+    </div>
+
+    <div class="mb-2">
+        <div class="p-8 bg-gray-200 rounded text-lg lg:text-2xl lg:mx-2">
+            The basis of Arkisto is that the long-term preservability of
+            well-described data is <em>always</em> the first consideration. Data
+            on an Arkisto deployment is alway available on disc (or object
+            storage) with a complete description <em>independently</em> of any
+            services such as websites or APIs. Once the data is safe and well
+            described, Arkisto has a flexible model for how data can be accessed
+            using a variety of services:
+
+            <ul class="list-disc pl-10">
+                <li>
+                    Human and machine oriented access-controlled data portals
+                    that make data available by searching and browsing and by
+                    API. There are currently two established portal projects and
+                    a number of active developments.
+                </li>
+
+                <li>
+                    Direct access by trusted services which can read and write
+                    data from the storage layer.
+                </li>
+                <li>
+                    Validation and preservation services at the data storage
+                    layer.
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+                </div>
+            </div>
+        </main>
+
+        <footer></footer>
+    </body>
 </html>
