@@ -93,30 +93,6 @@
 <div
     class=" hover:text-orange-500 mt-2 lg:mt-6"
 >
-    <a href="/tools/">Tools</a>
-</div>
-
-<div
-    class=" pl-4 text-base my-1 hover:text-orange-500"
->
-    <a href="/tools/description-tools/">Data Description</a>
-</div>
-
-<div
-    class=" pl-4 text-base my-1 hover:text-orange-500"
->
-    <a href="/tools/portal/">Data Discovery</a>
-</div>
-
-<div
-    class=" pl-4 text-base my-1 hover:text-orange-500"
->
-    <a href="/tools/capture-tools/">Data Import</a>
-</div>
- 
-<div
-    class=" hover:text-orange-500 mt-2 lg:mt-6"
->
     <a href="/standards/">Standards</a>
 </div>
 
@@ -137,6 +113,30 @@
 >
     <a href="/standards/arcp/">Identifiers</a>
 </div>
+ 
+<div
+    class=" hover:text-orange-500 mt-2 lg:mt-6"
+>
+    <a href="/tools/">Tools</a>
+</div>
+
+<div
+    class=" pl-4 text-base my-1 hover:text-orange-500"
+>
+    <a href="/tools/portal/">Data Discovery</a>
+</div>
+
+<div
+    class=" pl-4 text-base my-1 hover:text-orange-500"
+>
+    <a href="/tools/description-tools/">Data Description</a>
+</div>
+
+<div
+    class=" pl-4 text-base my-1 hover:text-orange-500"
+>
+    <a href="/tools/capture-tools/">Data Import</a>
+</div>
   
 
                 </div>
@@ -151,14 +151,70 @@
     <div class="text-3xl font-light text-orange-600">Standards: Oxford Common File Layout (OCFL)</div>
 
     <div>
-        <p class="my-4">The Oxford Common File Layout ([OCFL]) specification describes an application-independent approach to the storage of digital information in a structured, transparent, and predictable manner. It is designed to promote long-term object management best practices within digital repositories.</p>
-<p class="my-4">Specifically, the benefits of the OCFL include:</p>
+        <p class="my-4">Arkisto uses the <a href="https://ocfl.io/" class="text-orange-600 hover:underline">Oxford Common File Layout</a> standard for data storage.</p>
+<p class="my-4">OCFL is a specification for laying out digital collections on file or object storage. It is designed with long-term preservation principles in mind, does not rely on specialised software and avoids the problem of locking data collections into monolithic repositories behind APIs.</p>
+<p class="my-4">An <strong>OCFL Repository</strong> is a system of directories laid out on a filesystem using a prescribed layout. Each repository contains one or more <strong>OCFL Objects</strong>. An object contains an inventory and a set of versioned content directories.</p>
+<p class="my-4">The metadata describing an OCFL object's inventory and versions is stored as simple JSON files which are both human- and machine-readable, and can be processed with lightweight scripts.</p>
+<p class="my-4">The structure inside the content directories is not specified, so any existing collection of files can be deposited into an OCFL repository and later re-exported with its structure preserved.</p>
+<p class="my-4">OCFL places no restrictions on the file formats of object contents.</p>
+<p class="my-4">OCFL provides:</p>
 <ul class="ml-10 list-disc">
-<li class="">Completeness, so that a repository can be rebuilt from the files it stores</li>
-<li class="">Parsability, both by humans and machines, to ensure content can be understood in the absence of original software</li>
-<li class="">Robustness against errors, corruption, and migration between storage technologies</li>
-<li class="">Versioning, so repositories can make changes to objects allowing their history to persist</li>
-<li class="">Storage diversity, to ensure content can be stored on diverse storage infrastructures including conventional filesystems and cloud object stores</li>
+<li class="">Robustness against file errors and data corruption</li>
+<li class="">Efficient versioning and de-duplication</li>
+<li class="">Immutable data storage</li>
+</ul>
+<h2 id="links" class="text-1xl font-semibold">Links <a class="direct-link text-orange-600 hover:underline" href="#links">#</a></h2>
+<ul class="ml-10 list-disc">
+<li class=""><a href="https://ocfl.io/" class="text-orange-600 hover:underline">OCFL website</a></li>
+<li class=""><a href="https://ocfl.io/1.0/spec/" class="text-orange-600 hover:underline">OCFL Specification v1.0</a></li>
+<li class=""><a href="https://github.com/uts-eresearch/ocfl-js" class="text-orange-600 hover:underline">ocfl-js - a Node library for working with OCFL objects</a></li>
+</ul>
+<h2 id="example" class="text-1xl font-semibold">Example <a class="direct-link text-orange-600 hover:underline" href="#example">#</a></h2>
+<p class="my-4">Here is a simplified view of an OCFL repository containing two objects, one of which has two versions and one with three:</p>
+<ul class="ml-10 list-disc">
+<li class="">OCFL repository
+<ul class="ml-10 list-disc">
+<li class="">Object A
+<ul class="ml-10 list-disc">
+<li class="">inventory</li>
+<li class="">v1
+<ul class="ml-10 list-disc">
+<li class="">inventory</li>
+<li class="">content</li>
+</ul>
+</li>
+<li class="">v2
+<ul class="ml-10 list-disc">
+<li class="">inventory</li>
+<li class="">content</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="">Object B
+<ul class="ml-10 list-disc">
+<li class="">v1
+<ul class="ml-10 list-disc">
+<li class="">inventory</li>
+<li class="">content</li>
+</ul>
+</li>
+<li class="">v2
+<ul class="ml-10 list-disc">
+<li class="">inventory</li>
+<li class="">content</li>
+</ul>
+</li>
+<li class="">v3
+<ul class="ml-10 list-disc">
+<li class="">inventory</li>
+<li class="">content</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
     </div>
