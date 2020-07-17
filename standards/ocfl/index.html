@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Standards: Oxford Common File Layout (OCFL)</title>
+        <title>Standards: Oxford Common File Layout</title>
         <meta
             name="Description"
             content=""
@@ -99,30 +99,6 @@
 <div
     class=" hover:text-orange-500 mt-2 lg:mt-6"
 >
-    <a href="/tools/">Tools</a>
-</div>
-
-<div
-    class=" pl-4 text-base my-1 hover:text-orange-500"
->
-    <a href="/tools/description-tools/">Data Description</a>
-</div>
-
-<div
-    class=" pl-4 text-base my-1 hover:text-orange-500"
->
-    <a href="/tools/portal/">Data Discovery</a>
-</div>
-
-<div
-    class=" pl-4 text-base my-1 hover:text-orange-500"
->
-    <a href="/tools/capture-tools/">Data Import</a>
-</div>
- 
-<div
-    class=" hover:text-orange-500 mt-2 lg:mt-6"
->
     <a href="/standards/">Standards</a>
 </div>
 
@@ -143,6 +119,30 @@
 >
     <a href="/standards/arcp/">Identifiers</a>
 </div>
+ 
+<div
+    class=" hover:text-orange-500 mt-2 lg:mt-6"
+>
+    <a href="/tools/">Tools</a>
+</div>
+
+<div
+    class=" pl-4 text-base my-1 hover:text-orange-500"
+>
+    <a href="/tools/portal/">Data Discovery</a>
+</div>
+
+<div
+    class=" pl-4 text-base my-1 hover:text-orange-500"
+>
+    <a href="/tools/description-tools/">Data Description</a>
+</div>
+
+<div
+    class=" pl-4 text-base my-1 hover:text-orange-500"
+>
+    <a href="/tools/capture-tools/">Data Import</a>
+</div>
   
 
                 </div>
@@ -154,10 +154,10 @@
             ><i class="fas fa-arrow-left"></i>&nbsp;Home</a
         >
     </div> -->
-    <div class="text-3xl font-light text-orange-600">Standards: Oxford Common File Layout (OCFL)</div>
+    <div class="text-3xl font-light text-orange-600">Standards: Oxford Common File Layout</div>
 
     <div>
-        <p class="my-4">Arkisto uses the <a href="https://ocfl.io/" class="text-orange-600 hover:underline">Oxford Common File Layout</a> standard for data storage.</p>
+        <p class="my-4">Arkisto uses the <a href="https://ocfl.io/" class="text-orange-600 hover:underline">Oxford Common File Layout</a> (OCFL) standard for data storage.</p>
 <p class="my-4">OCFL is a specification for laying out digital collections on file or object storage. It is designed with long-term preservation principles in mind, does not rely on specialised software and avoids the problem of locking data collections into monolithic repositories behind APIs.</p>
 <img src="/assets/images/ocfl.png" alt="A cartoon representing an OCFL repository as a set of parallel fields containing lumps representing data payloads" />
 <p class="my-4">An <strong>OCFL Repository</strong> is a system of directories laid out on a filesystem using a prescribed layout. Each repository contains one or more <strong>OCFL Objects</strong>. An object contains an inventory and a set of versioned content directories.</p>
@@ -168,13 +168,15 @@
 <ul class="ml-10 list-disc">
 <li class="">Robustness against file errors and data corruption</li>
 <li class="">Efficient versioning and de-duplication</li>
-<li class="">Immutable data storage</li>
+<li class="">Immutable data storage<br>
+<br></li>
 </ul>
 <h2 id="links" class="text-1xl font-semibold">Links <a class="direct-link text-orange-600 hover:underline" href="#links">#</a></h2>
 <ul class="ml-10 list-disc">
 <li class=""><a href="https://ocfl.io/" class="text-orange-600 hover:underline">OCFL website</a></li>
 <li class=""><a href="https://ocfl.io/1.0/spec/" class="text-orange-600 hover:underline">OCFL Specification v1.0</a></li>
-<li class=""><a href="https://github.com/uts-eresearch/ocfl-js" class="text-orange-600 hover:underline">ocfl-js - a Node library for working with OCFL objects</a></li>
+<li class=""><a href="https://github.com/uts-eresearch/ocfl-js" class="text-orange-600 hover:underline">ocfl-js - a Node library for working with OCFL objects</a><br>
+<br></li>
 </ul>
 <h2 id="example" class="text-1xl font-semibold">Example <a class="direct-link text-orange-600 hover:underline" href="#example">#</a></h2>
 <p class="my-4">Here is a simplified view of an OCFL repository containing two objects, one of which has two versions and one with three:</p>
