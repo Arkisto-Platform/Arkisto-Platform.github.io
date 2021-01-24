@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tools: Data Portal &amp; Discovery</title>
+        <meta
+            name="Description"
+            content=""
+        />
+        <link rel="stylesheet" href="/assets/tailwind.css" />
+        <link rel="stylesheet" href="/assets/site.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+        />
+        <link
+            rel="alternate"
+            href="."
+            type="application/atom+xml"
+            title=""
+        />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+        </style>
+    </head>
+    <body
+        class="theme-text-paragraph theme-bg-primary font-light text-lg lg:text-2xl"
+    >
+        <header class="px-4 block md:hidden">
+            <div class="flex flex-row space-x-4 my-2">
+                <div
+                    class="text-xl md:text-5xl font-light tracking-wide"
+                    style="font-family: 'Audiowide', cursive"
+                >
+                    <a href="/">arkisto</a>
+                </div>
+                <div class="flex-grow"></div>
+                <div>
+                    <a href="/index-page"><i class="fas fa-bars"></i></a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="flex flex-row h-screen">
+                <div
+                    class="py-6 px-4 hidden md:block md:w-1/4 lg:w-1/5 flex flex-col bg-green-100"
+                >
+                    <div
+                        class="py-4 text-lg md:text-3xl lg:text-4xl font-light tracking-wide cursor-pointer text-center"
+                        style="font-family: 'Audiowide', cursive"
+                    >
+                        <a href="/">arkisto</a>
+                    </div>
+                      
+<div
+    class=" hover:text-yellow-700 mt-2 lg:mt-6"
+>
+    <a href="/why/">Why Arkisto</a>
+</div>
+ 
+<div
+    class=" hover:text-yellow-700 mt-2 lg:mt-6"
+>
+    <a href="/case-studies/">Case Studies</a>
+</div>
+
+<div
+    class=" pl-4 text-base my-1 hover:text-yellow-700"
+>
+    <a href="/case-studies/paradisec/">PARADISEC</a>
+</div>
+
+<div
+    class=" pl-4 text-base my-1 hover:text-yellow-700"
+>
+    <a href="/case-studies/uts-repo/">UTS Data</a>
+</div>
+
+<div
+    class=" pl-4 text-base my-1 hover:text-yellow-700"
+>
+    <a href="/case-studies/uts-grants/">Grants</a>
+</div>
+
+<div
+    class=" pl-4 text-base my-1 hover:text-yellow-700"
+>
+    <a href="/case-studies/uts-cultural/">UTS Cultural Data</a>
+</div>
+ 
+<div
+    class=" hover:text-yellow-700 mt-2 lg:mt-6"
+>
+    <a href="/use-cases/">Use Cases</a>
+</div>
+ 
+<div
+    class=" hover:text-yellow-700 mt-2 lg:mt-6"
+>
+    <a href="/standards/">Standards</a>
+</div>
+
+<div
+    class=" pl-4 text-base my-1 hover:text-yellow-700"
+>
+    <a href="/standards/ocfl/">Storage</a>
+</div>
+
+<div
+    class=" pl-4 text-base my-1 hover:text-yellow-700"
+>
+    <a href="/standards/ro-crate/">Packaging</a>
+</div>
+
+<div
+    class=" pl-4 text-base my-1 hover:text-yellow-700"
+>
+    <a href="/standards/arcp/">Identifiers</a>
+</div>
+ 
+<div
+    class=" hover:text-yellow-700 mt-2 lg:mt-6"
+>
+    <a href="/tools/">Tools</a>
+</div>
+
+<div
+    class=" pl-4 text-base my-1 hover:text-yellow-700"
+>
+    <a href="/tools/description/">Data Description</a>
+</div>
+
+<div
+    class="text-black  pl-4 text-base my-1 hover:text-yellow-700"
+>
+    <a href="/tools/portal/">Data Discovery</a>
+</div>
+
+<div
+    class=" pl-4 text-base my-1 hover:text-yellow-700"
+>
+    <a href="/tools/capture-tools/">Data Import</a>
+</div>
+  
+
+                </div>
+                <div class="mb-8 py-6 px-4 md:w-3/4 lg:w-4/5 overflow-scroll">
+                    
+<div class="flex flex-col space-y-6">
+    <!-- <div class="pt-2">
+        <a href="/"
+            ><i class="fas fa-arrow-left"></i>&nbsp;Home</a
+        >
+    </div> -->
+    <div class="mt-5 text-3xl font-light text-orange-600">Tools: Data Portal &amp; Discovery</div>
+
+    <div>
+        <a name="oni">
+<h2 id="oni" class="text-1xl font-semibold">Oni <a class="direct-link text-yellow-700 hover:underline" href="#oni"></a></h2>
+<p class="my-4">Status: V1</p>
+<p class="my-4">Oni is a simple and flexible platform for publishing data and documents stored in an OCFL repository via a web interface with a high-performance faceted search and robust access control.</p>
+<p class="my-4">It can be used on large heterogenous collections such as institutional repositories, or at a smaller scale for focussed data or document collections.</p>
+<img src="/assets/images/oni-nginx.png" alt="A cartoon showing a large lump representing a data object being transferred through a security checkpoint to a user's laptop" />
+<p class="my-4">Data descriptions stored as RO-Crate metadata are indexed in a <a href="https://lucene.apache.org/solr/" class="text-yellow-700 hover:underline">Solr</a> search engine. The indexing process is controlled by a simple configuration format. The Solr index can store:</p>
+<ul class="ml-10 list-disc">
+<li class="">core metadata</li>
+<li class="">access control metadata and licensing</li>
+<li class="">full-text search on selected files within datasets</li>
+<li class="">geospatial metadata</li>
+</ul>
+<p class="my-4">A single-page web app allows users to explore the repository’s contents using text search and faceted browsing. The contents of datasets can be made available in a flexible and configurable way, either as embedded page contents in the Oni app, by linking through to a web-enabled OCFL repository, or a combination of both.</p>
+<p class="my-4">Future versions of Oni will support granular authorisation based on licensing applied to individual datasets, with search results filtered to only those objects which an authenticated user is allowed to access.</p>
+<img src="/assets/images/oni-system-diagram.png" alt="A block diagram of the components of an Oni portal" />
+<p class="my-4">Oni uses Docker for flexible and scalable deployment.</p>
+<p class="my-4">The Oni (OCFL + Node/nginx + Index) platform is <a href="https://github.com/UTS-eResearch/oni-express" class="text-yellow-700 hover:underline">available on github</a>.</p>
+<p class="my-4"><a href="https://eresearch.uts.edu.au/2019/11/05/eResearch2019_lighting_ocfl_nginx.htm" class="text-yellow-700 hover:underline">“Publishing versioned datasets using OCFL and nginx” - a presentation on an early version of Oni from eResearch Australasia 2019</a></p>
+<p class="my-4">Oni’s initial development was funded by the Australian Research Data Commons.</p>
+<h2 id="modern-paradisec-engine" class="text-1xl font-semibold">Modern PARADISEC engine <a class="direct-link text-yellow-700 hover:underline" href="#modern-paradisec-engine"></a></h2>
+<p class="my-4">The <a href="/case-studies/paradisec" class="text-yellow-700 hover:underline">tool that powers the new version of PARADISEC</a> is available.</p>
+
+    </div>
+</div>
+
+                </div>
+            </div>
+        </main>
+
+        <footer></footer>
+    </body>
+</html>

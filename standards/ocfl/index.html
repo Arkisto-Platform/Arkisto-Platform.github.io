@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Standards: Oxford Common File Layout</title>
+        <meta
+            name="Description"
+            content=""
+        />
+        <link rel="stylesheet" href="/assets/tailwind.css" />
+        <link rel="stylesheet" href="/assets/site.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+        />
+        <link
+            rel="alternate"
+            href="."
+            type="application/atom+xml"
+            title=""
+        />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+        </style>
+    </head>
+    <body
+        class="theme-text-paragraph theme-bg-primary font-light text-lg lg:text-2xl"
+    >
+        <header class="px-4 block md:hidden">
+            <div class="flex flex-row space-x-4 my-2">
+                <div
+                    class="text-xl md:text-5xl font-light tracking-wide"
+                    style="font-family: 'Audiowide', cursive"
+                >
+                    <a href="/">arkisto</a>
+                </div>
+                <div class="flex-grow"></div>
+                <div>
+                    <a href="/index-page"><i class="fas fa-bars"></i></a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="flex flex-row h-screen">
+                <div
+                    class="py-6 px-4 hidden md:block md:w-1/4 lg:w-1/5 flex flex-col bg-green-100"
+                >
+                    <div
+                        class="py-4 text-lg md:text-3xl lg:text-4xl font-light tracking-wide cursor-pointer text-center"
+                        style="font-family: 'Audiowide', cursive"
+                    >
+                        <a href="/">arkisto</a>
+                    </div>
+                      
+<div
+    class=" hover:text-yellow-700 mt-2 lg:mt-6"
+>
+    <a href="/why/">Why Arkisto</a>
+</div>
+ 
+<div
+    class=" hover:text-yellow-700 mt-2 lg:mt-6"
+>
+    <a href="/case-studies/">Case Studies</a>
+</div>
+
+<div
+    class=" pl-4 text-base my-1 hover:text-yellow-700"
+>
+    <a href="/case-studies/paradisec/">PARADISEC</a>
+</div>
+
+<div
+    class=" pl-4 text-base my-1 hover:text-yellow-700"
+>
+    <a href="/case-studies/uts-repo/">UTS Data</a>
+</div>
+
+<div
+    class=" pl-4 text-base my-1 hover:text-yellow-700"
+>
+    <a href="/case-studies/uts-grants/">Grants</a>
+</div>
+
+<div
+    class=" pl-4 text-base my-1 hover:text-yellow-700"
+>
+    <a href="/case-studies/uts-cultural/">UTS Cultural Data</a>
+</div>
+ 
+<div
+    class=" hover:text-yellow-700 mt-2 lg:mt-6"
+>
+    <a href="/use-cases/">Use Cases</a>
+</div>
+ 
+<div
+    class=" hover:text-yellow-700 mt-2 lg:mt-6"
+>
+    <a href="/standards/">Standards</a>
+</div>
+
+<div
+    class="text-black  pl-4 text-base my-1 hover:text-yellow-700"
+>
+    <a href="/standards/ocfl/">Storage</a>
+</div>
+
+<div
+    class=" pl-4 text-base my-1 hover:text-yellow-700"
+>
+    <a href="/standards/ro-crate/">Packaging</a>
+</div>
+
+<div
+    class=" pl-4 text-base my-1 hover:text-yellow-700"
+>
+    <a href="/standards/arcp/">Identifiers</a>
+</div>
+ 
+<div
+    class=" hover:text-yellow-700 mt-2 lg:mt-6"
+>
+    <a href="/tools/">Tools</a>
+</div>
+
+<div
+    class=" pl-4 text-base my-1 hover:text-yellow-700"
+>
+    <a href="/tools/description/">Data Description</a>
+</div>
+
+<div
+    class=" pl-4 text-base my-1 hover:text-yellow-700"
+>
+    <a href="/tools/portal/">Data Discovery</a>
+</div>
+
+<div
+    class=" pl-4 text-base my-1 hover:text-yellow-700"
+>
+    <a href="/tools/capture-tools/">Data Import</a>
+</div>
+  
+
+                </div>
+                <div class="mb-8 py-6 px-4 md:w-3/4 lg:w-4/5 overflow-scroll">
+                    
+<div class="flex flex-col space-y-6">
+    <!-- <div class="pt-2">
+        <a href="/"
+            ><i class="fas fa-arrow-left"></i>&nbsp;Home</a
+        >
+    </div> -->
+    <div class="mt-5 text-3xl font-light text-orange-600">Standards: Oxford Common File Layout</div>
+
+    <div>
+        <p class="my-4">Arkisto uses the <a href="https://ocfl.io/" class="text-yellow-700 hover:underline">Oxford Common File Layout</a> (OCFL) standard for data storage.</p>
+<p class="my-4">OCFL is a specification for laying out digital collections on file or object storage. It is designed with long-term preservation principles in mind, does not rely on specialised software and avoids the problem of locking data collections into monolithic repositories behind APIs.</p>
+<img src="/assets/images/ocfl.png" alt="A cartoon representing an OCFL repository as a set of parallel fields containing lumps representing data payloads" />
+<p class="my-4">An <strong>OCFL Repository</strong> is a system of directories laid out on a filesystem using a prescribed layout. Each repository contains one or more <strong>OCFL Objects</strong>. An object contains an inventory and a set of versioned content directories.</p>
+<p class="my-4">The metadata describing an OCFL object’s inventory and versions is stored as simple JSON files which are both human- and machine-readable, and can be processed with lightweight scripts.</p>
+<p class="my-4">The structure inside the content directories is not specified, so any existing collection of files can be deposited into an OCFL repository and later re-exported with its structure preserved.</p>
+<p class="my-4">OCFL places no restrictions on the file formats of object contents.</p>
+<p class="my-4">OCFL provides:</p>
+<ul class="ml-10 list-disc">
+<li class="">Robustness against file errors and data corruption</li>
+<li class="">Efficient versioning and de-duplication</li>
+<li class="">Immutable data storage
+<br></li>
+</ul>
+<h2 id="links" class="text-1xl font-semibold">Links <a class="direct-link text-yellow-700 hover:underline" href="#links"></a></h2>
+<ul class="ml-10 list-disc">
+<li class=""><a href="https://ocfl.io/" class="text-yellow-700 hover:underline">OCFL website</a></li>
+<li class=""><a href="https://ocfl.io/1.0/spec/" class="text-yellow-700 hover:underline">OCFL Specification v1.0</a></li>
+<li class=""><a href="https://github.com/uts-eresearch/ocfl-js" class="text-yellow-700 hover:underline">ocfl-js - a Node library for working with OCFL objects</a>
+<br></li>
+</ul>
+<h2 id="example" class="text-1xl font-semibold">Example <a class="direct-link text-yellow-700 hover:underline" href="#example"></a></h2>
+<p class="my-4">Here is a simplified view of an OCFL repository containing two objects, one of which has two versions and one with three:</p>
+<ul class="ml-10 list-disc">
+<li class="">OCFL repository
+<ul class="ml-10 list-disc">
+<li class="">Object A
+<ul class="ml-10 list-disc">
+<li class="">inventory</li>
+<li class="">v1
+<ul class="ml-10 list-disc">
+<li class="">inventory</li>
+<li class="">content</li>
+</ul>
+</li>
+<li class="">v2
+<ul class="ml-10 list-disc">
+<li class="">inventory</li>
+<li class="">content</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="">Object B
+<ul class="ml-10 list-disc">
+<li class="">v1
+<ul class="ml-10 list-disc">
+<li class="">inventory</li>
+<li class="">content</li>
+</ul>
+</li>
+<li class="">v2
+<ul class="ml-10 list-disc">
+<li class="">inventory</li>
+<li class="">content</li>
+</ul>
+</li>
+<li class="">v3
+<ul class="ml-10 list-disc">
+<li class="">inventory</li>
+<li class="">content</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</div>
+
+                </div>
+            </div>
+        </main>
+
+        <footer></footer>
+    </body>
+</html>
