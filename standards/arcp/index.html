@@ -8,8 +8,13 @@
             name="Description"
             content=""
         />
-        <link rel="stylesheet" href="/assets/tailwind.css" />
-        <link rel="stylesheet" href="/assets/site.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.1/tailwind.min.css"
+            integrity="sha512-BAK6UB671tmfzrkeH1CacTvgHQ3aLAFnT2KsigdATsc5X7+3u42tb5vjmAoDiqtxphP5dNZ3cDygivTsGEJhGw=="
+            crossorigin="anonymous"
+        />
+        <!-- <link rel="stylesheet" href="/assets/site.css" /> -->
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
@@ -63,6 +68,36 @@
 <div
     class=" hover:text-yellow-700 mt-2 lg:mt-6"
 >
+    <a href="/About/">About</a>
+</div>
+ 
+<div
+    class=" hover:text-yellow-700 mt-2 lg:mt-6"
+>
+    <a href="/standards/">Standards</a>
+</div>
+
+<div
+    class=" pl-4 text-base my-1 hover:text-yellow-700"
+>
+    <a href="/standards/ocfl/">Storage</a>
+</div>
+
+<div
+    class=" pl-4 text-base my-1 hover:text-yellow-700"
+>
+    <a href="/standards/ro-crate/">Packaging</a>
+</div>
+
+<div
+    class="text-yellow-700  pl-4 text-base my-1 hover:text-yellow-700"
+>
+    <a href="/standards/arcp/">Identifiers</a>
+</div>
+ 
+<div
+    class=" hover:text-yellow-700 mt-2 lg:mt-6"
+>
     <a href="/case-studies/">Case Studies</a>
 </div>
 
@@ -94,30 +129,6 @@
     class=" hover:text-yellow-700 mt-2 lg:mt-6"
 >
     <a href="/use-cases/">Use Cases</a>
-</div>
- 
-<div
-    class=" hover:text-yellow-700 mt-2 lg:mt-6"
->
-    <a href="/standards/">Standards</a>
-</div>
-
-<div
-    class=" pl-4 text-base my-1 hover:text-yellow-700"
->
-    <a href="/standards/ocfl/">Storage</a>
-</div>
-
-<div
-    class=" pl-4 text-base my-1 hover:text-yellow-700"
->
-    <a href="/standards/ro-crate/">Packaging</a>
-</div>
-
-<div
-    class="text-black  pl-4 text-base my-1 hover:text-yellow-700"
->
-    <a href="/standards/arcp/">Identifiers</a>
 </div>
  
 <div
@@ -163,10 +174,13 @@
     <div class="mt-5 text-3xl font-light text-orange-600">Standards: Archive and Package (arcp) Identifiers</div>
 
     <div>
-        <p class="my-4">In order to make Arkisto repositories interoperable so that data can be federated, aggregated and moved between providers, we are exploring the use of the <a href="https://arxiv.org/pdf/1809.06935.pdf" class="text-yellow-700 hover:underline">The Archive and Package (arcp) URI scheme</a>. ARCP identifiers allow local data stores to carve out a namespace for their data, in a similar way to DNS, so that local identifiers can be minted and made unique.</p>
+        <div class="text-blue-600 text-2xl my-8">This is being considered though it is not yet settled.</div>
+<p class="my-4">In order to make Arkisto repositories interoperable so that data can be federated, aggregated and moved between providers, we are exploring the use of the <a href="https://arxiv.org/pdf/1809.06935.pdf" class="text-yellow-700 hover:underline">The Archive and Package (arcp) URI scheme</a>. ARCP identifiers allow local data stores to carve out a namespace for their data, in a similar way to DNS, so that local identifiers can be minted and made unique.</p>
 <p class="my-4"><strong>Sustainability</strong>: This will allow OCFL repository content to be merged without clashes, making it possible for legacy content to be re-housed in larger repositories if needed, and enable distributed repository management.</p>
 
     </div>
+
+    
 </div>
 
                 </div>

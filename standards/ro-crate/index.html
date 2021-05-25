@@ -8,8 +8,13 @@
             name="Description"
             content=""
         />
-        <link rel="stylesheet" href="/assets/tailwind.css" />
-        <link rel="stylesheet" href="/assets/site.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.1/tailwind.min.css"
+            integrity="sha512-BAK6UB671tmfzrkeH1CacTvgHQ3aLAFnT2KsigdATsc5X7+3u42tb5vjmAoDiqtxphP5dNZ3cDygivTsGEJhGw=="
+            crossorigin="anonymous"
+        />
+        <!-- <link rel="stylesheet" href="/assets/site.css" /> -->
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
@@ -63,6 +68,36 @@
 <div
     class=" hover:text-yellow-700 mt-2 lg:mt-6"
 >
+    <a href="/About/">About</a>
+</div>
+ 
+<div
+    class=" hover:text-yellow-700 mt-2 lg:mt-6"
+>
+    <a href="/standards/">Standards</a>
+</div>
+
+<div
+    class=" pl-4 text-base my-1 hover:text-yellow-700"
+>
+    <a href="/standards/ocfl/">Storage</a>
+</div>
+
+<div
+    class="text-yellow-700  pl-4 text-base my-1 hover:text-yellow-700"
+>
+    <a href="/standards/ro-crate/">Packaging</a>
+</div>
+
+<div
+    class=" pl-4 text-base my-1 hover:text-yellow-700"
+>
+    <a href="/standards/arcp/">Identifiers</a>
+</div>
+ 
+<div
+    class=" hover:text-yellow-700 mt-2 lg:mt-6"
+>
     <a href="/case-studies/">Case Studies</a>
 </div>
 
@@ -94,30 +129,6 @@
     class=" hover:text-yellow-700 mt-2 lg:mt-6"
 >
     <a href="/use-cases/">Use Cases</a>
-</div>
- 
-<div
-    class=" hover:text-yellow-700 mt-2 lg:mt-6"
->
-    <a href="/standards/">Standards</a>
-</div>
-
-<div
-    class=" pl-4 text-base my-1 hover:text-yellow-700"
->
-    <a href="/standards/ocfl/">Storage</a>
-</div>
-
-<div
-    class="text-black  pl-4 text-base my-1 hover:text-yellow-700"
->
-    <a href="/standards/ro-crate/">Packaging</a>
-</div>
-
-<div
-    class=" pl-4 text-base my-1 hover:text-yellow-700"
->
-    <a href="/standards/arcp/">Identifiers</a>
 </div>
  
 <div
@@ -163,52 +174,127 @@
     <div class="mt-5 text-3xl font-light text-orange-600">Standards: Data Description and Packaging</div>
 
     <div>
-        <p class="my-4"><a href="https://researchobject.github.io/ro-crate/" class="text-yellow-700 hover:underline">RO-Crate</a> is a method for describing and packaging research data from ANY discipline, and any amount of detail from simple who/what/where discovery metadata to file-level or even variable level inside files.</p>
-<div class="flex flex-col lg:flex-row mb-2">
-<div class="p-8 bg-gray-200 rounded w-full lg:mx-2 lg:w-1/2">
-<p class="my-4">RO-Crate is built on existing standards and is aligned with current best practice in describing and packaging data.</p>
-<p class="my-4">See <a class="text-orange-600 hover:text-orange-500" href="https://data.research.uts.edu.au/examples/ro-crate/examples/src/">RO-Crate examples</a></p>
-<ul>
-<li><a class="text-orange-600 hover:text-orange-500" href="#https://data.research.uts.edu.au/examples/ro-crate/examples/src/UTS/">Sample RO-Crates from the UTS research data repository</a></li>
-<li><a class="text-orange-600 hover:text-orange-500" href="#https://data.research.uts.edu.au/examples/ro-crate/examples/src/notebooks/">Sample RO-Crates exported from LabArchives</a></li>
-<li><a class="text-orange-600 hover:text-orange-500" href="#https://data.research.uts.edu.au/examples/ro-crate/examples/src/samples/">Sample RO-Crates from a variety of sources</a>
-</li></ul>
-</div>
-<div  class="p-8 bg-gray-200 rounded w-full my-4 lg:my-0 lg:mx-2 lg:w-1/2 text-center  flex flex-col justify-center">
-<p class="my-4">RO-Crate data is <em>automatically</em> discoverable - for example it is compatible with <a class="text-orange-600 hover:text-orange-500" href="https://datasetsearch.research.google.com/">Google Dataset Search</a> and future versions of <a class="text-orange-600 hover:text-orange-500" href="https://researchdata.edu.au/">Research Data Australia</a></p>
-</div>
+        <p class="my-4">Arkisto uses <a href="https://researchobject.github.io/ro-crate/" class="text-yellow-700 hover:underline">RO-Crate</a>, which is a method for describing and packaging research data from ANY discipline into distributable, reusable <em>Digital Objects</em> with any amount of detailed metadata from simple who/what/where discovery-oriented description to metadata at the file-level or even variable level inside files.</p>
+<p class="my-4">RO-Crate is an implementer-focussed guide to best practice and is based on widely-used standards with <a href="https://schema.org" class="text-yellow-700 hover:underline">schema.org</a> annotations in <a href="https://json-ld.org/" class="text-yellow-700 hover:underline">JSON-LD</a> and aims to make it easy to creat good quality metadata description tools which are accessible and practical for use in a wide variety of situations; from an individual researcher working with a folder of data, to large data-intensive computational research environments.</p>
+<p class="my-4">RO-Crate is used in the <a href="/case-studies/uts-repo" class="text-yellow-700 hover:underline">UTS Research Data Portal</a> and the <a href="/case-studies/paradisec" class="text-yellow-700 hover:underline">Modern PARADISEC demonstrator</a> for all data objects.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 text-base text-center" >
+<section class="border-2 p-4 rounded">
+<img src='Slide1.png' alt='☁️
+📂
+<p class="my-4">📄
+ID? Title? Description?</p>
+<p class="my-4">👩‍🔬👨🏿‍🔬Who created this data?
+📄What parts does it have?
+📅 When?
+🗒️ What is it about?
+♻️ How can it be reused?
+🏗️ As part of which project?
+💰 Who funded it?
+⚒️ How was it made?
+Addressable resources
+Local Data - Files
+👩🏿‍🔬 https://orcid.org/0000-0001-2345-6789
+🔬 https://en.wikipedia.org/wiki/Scanning_electron_microscope
+' title='1' border='1'  width='85%'/&gt;</p>
+<p class="my-4">RO-Crate is method for describing a dataset as a digital object using a <strong>single linked-data metadata document</strong></p>
+</section>
+<section class="border-2 p-4 rounded">
+<img src='Slide2.png' alt='📂
+<p class="my-4">🔬 🔭 📹 💽 🖥️ ⚙️🎼🌡️🔮🎙️🔍🌏📡💉🏥💊🌪️
+' title='2' border='1'  width='85%'/&gt;</p>
+<p class="my-4">The dataset may contain any kind of data resource about anything, in any format as a file or URL</p>
+</section>
+<section class="border-2 p-4 rounded">
+<img src='Slide3.png' alt='📂
+<p class="my-4">|-- Folder1/
+|          |-- file1.this
+|          |-- file2.that
+|-- Folder2/
+|		   -- file1.this
+|          |-- file2.that
+|-2021-04-08 07.58.17.jpg
+{
+&quot;@id&quot;: &quot;2021-04-08 07.58.17.jpg&quot;,
+&quot;@type&quot;: &quot;File&quot;,
+&quot;contentSize&quot;: 3271409,
+&quot;dateModified&quot;: &quot;2021-04-08T07:58:17+10:00&quot;,
+&quot;description&quot;: &quot;&quot;,
+&quot;encodingFormat&quot;: [
+{
+&quot;@id&quot;:  &quot;https://www.nationalarchives.gov.uk/PRONOM/x-fmt/391&quot;
+},
+&quot;image/jpeg&quot;
+],
+&quot;name&quot;: &quot;Cute puppy&quot;
+},</p>
+<p class="my-4">' title='3' border='1'  wi  dth='85%'/&gt;</p>
+<p class="my-4">Each resource can have a machine readable description in JSON-LD format</p>
+</section>
+<section class="border-2 p-4 rounded">
+<img src='Slide4.png' alt='📂
+<p class="my-4">|-- Folder1/
+|          |-- file1.this
+|          |-- file2.that
+|-- Folder2/
+|		   -- file1.this
+|          |-- file2.that
+|-2021-04-08 07.58.17.jpg</p>
+<p class="my-4">' title='4' border='1'  width='85%'/&gt;</p>
+<p class="my-4">A human-readable description and preview can be in an HTML file that lives alongside the metadata</p>
+</section>
+<section class="border-2 p-4 rounded">
+<img src='Slide5.png' alt='♻️
+<p class="my-4">📂
+📈Chart1</p>
+<p class="my-4">🏭 CreateAction 🏭
+Date: 2021-04-01
+⚙️Software / workflow
+Name: My Workflow
+URL: https://example.com/workflow/1235
+🔬instrument</p>
+<p class="my-4">🐥result
+👩🏽‍🔬Agent
+' title='5' border='1'  width='85%'/&gt;</p>
+<p class="my-4">Provenance and workflow information can be included - to assist in data and research-process re-use</p>
+</section>
+<section class="border-2 p-4 rounded">
+<img src='Slide6.png' alt='
+ 🎁🗜️
+📮🚚' title='6' border='1'  width='85%'/>
+<p class="my-4">RO-Crate Digital Objects may be packaged for distribution eg via Zip, Bagit and OCFL Objects</p>
+</section>
 </div>
 <div class="flex flex-col space-y-4 lg:flex-row lg:space-y-0 lg:space-x-4 my-10">
-  <div class="flex flex-col border-2 p-4 rounded justify-center">
-      <div class="w-full px-10">
-        <img src="/assets/images/ro-crate-modis.png">
-      </div>
-      <div class="text-center text-sm lg:text-base">
-        <a href="https://data.research.uts.edu.au/publication/67222dfddbd57f659ded65a0cd5c70e1/">Processed Satellite imagery</a>
-      </div>
-  </div>
-  <div class="flex flex-col border-2 p-4 rounded justify-center">
-    <div>
-      <img src="/assets/images/ro-crate-f2f.png">
-    </div>
-      <div class="text-center text-base">
-        An entire history dataset that has been exported into RO-Crate.
-      </div>
-  </div>
-  <div class="flex flex-col border-2 p-4 rounded justify-center">
-    <div>
-      <img src="/assets/images/ro-crate-spec.png">
-    </div>
-      <div class="text-center text-base">
-        RO-Crate is the result of international collaboration, and has an <a href="https://researchobject.github.io/ro-crate/">actively-maintained specification</a>.
-      </div>
-    </div>
+<div class="flex flex-col border-2 p-4 rounded justify-center">
+<div class="w-full px-10">
+<img src="/assets/images/ro-crate-modis.png">
+</div>
+<div class="text-center text-sm lg:text-base">
+<p class="my-4"><a href="https://data.research.uts.edu.au/publication/67222dfddbd57f659ded65a0cd5c70e1/" class="text-yellow-700 hover:underline">Processed Satellite imagery</a></p>
 </div>
 </div>
-<p class="my-4">It is based on widely-used standards with <a href="https://schema.org" class="text-yellow-700 hover:underline">schema.org</a> annotations in <a href="https://json-ld.org/" class="text-yellow-700 hover:underline">JSON-LD</a> and aims to make best-practice in formal metadata description accessible and practical for use in a wide variety of situations, from an individual researcher working with a folder of data, to large data-intensive computational research environments.</p>
-<p class="my-4">RO-Crate is used in the <a href="/case-studies/uts-repo" class="text-yellow-700 hover:underline">UTS Research Data Portal</a> and the <a href="/case-studies/paradisec" class="text-yellow-700 hover:underline">Modern PARADISEC demonstrator</a> for all data objects.</p>
+<div class="flex flex-col border-2 p-4 rounded justify-center">
+<div>
+<img src="/assets/images/ro-crate-f2f.png">
+</div>
+<div class="text-center text-base">
+<p class="my-4"><a href="https://data.research.uts.edu.au/examples/ro-crate/examples/src/samples/farms_to_freeways/" class="text-yellow-700 hover:underline">An entire history dataset that has been exported into RO-Crate</a></p>
+</div>
+</div>
+<div class="flex flex-col border-2 p-4 rounded justify-center">
+<div>
+<img src="/assets/images/ro-crate-spec.png">
+</div>
+<div class="text-center text-base">
+<p class="my-4">RO-Crate is the result of international collaboration, and has an <a href="https://researchobject.github.io/ro-crate/" class="text-yellow-700 hover:underline">actively-maintained specification</a>.</p>
+</div>
+</div>
+</div>
+</div>
 
     </div>
+
+    
 </div>
 
                 </div>

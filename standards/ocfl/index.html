@@ -8,8 +8,13 @@
             name="Description"
             content=""
         />
-        <link rel="stylesheet" href="/assets/tailwind.css" />
-        <link rel="stylesheet" href="/assets/site.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.1/tailwind.min.css"
+            integrity="sha512-BAK6UB671tmfzrkeH1CacTvgHQ3aLAFnT2KsigdATsc5X7+3u42tb5vjmAoDiqtxphP5dNZ3cDygivTsGEJhGw=="
+            crossorigin="anonymous"
+        />
+        <!-- <link rel="stylesheet" href="/assets/site.css" /> -->
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
@@ -63,6 +68,36 @@
 <div
     class=" hover:text-yellow-700 mt-2 lg:mt-6"
 >
+    <a href="/About/">About</a>
+</div>
+ 
+<div
+    class=" hover:text-yellow-700 mt-2 lg:mt-6"
+>
+    <a href="/standards/">Standards</a>
+</div>
+
+<div
+    class="text-yellow-700  pl-4 text-base my-1 hover:text-yellow-700"
+>
+    <a href="/standards/ocfl/">Storage</a>
+</div>
+
+<div
+    class=" pl-4 text-base my-1 hover:text-yellow-700"
+>
+    <a href="/standards/ro-crate/">Packaging</a>
+</div>
+
+<div
+    class=" pl-4 text-base my-1 hover:text-yellow-700"
+>
+    <a href="/standards/arcp/">Identifiers</a>
+</div>
+ 
+<div
+    class=" hover:text-yellow-700 mt-2 lg:mt-6"
+>
     <a href="/case-studies/">Case Studies</a>
 </div>
 
@@ -94,30 +129,6 @@
     class=" hover:text-yellow-700 mt-2 lg:mt-6"
 >
     <a href="/use-cases/">Use Cases</a>
-</div>
- 
-<div
-    class=" hover:text-yellow-700 mt-2 lg:mt-6"
->
-    <a href="/standards/">Standards</a>
-</div>
-
-<div
-    class="text-black  pl-4 text-base my-1 hover:text-yellow-700"
->
-    <a href="/standards/ocfl/">Storage</a>
-</div>
-
-<div
-    class=" pl-4 text-base my-1 hover:text-yellow-700"
->
-    <a href="/standards/ro-crate/">Packaging</a>
-</div>
-
-<div
-    class=" pl-4 text-base my-1 hover:text-yellow-700"
->
-    <a href="/standards/arcp/">Identifiers</a>
 </div>
  
 <div
@@ -164,75 +175,57 @@
 
     <div>
         <p class="my-4">Arkisto uses the <a href="https://ocfl.io/" class="text-yellow-700 hover:underline">Oxford Common File Layout</a> (OCFL) standard for data storage.</p>
-<p class="my-4">OCFL is a specification for laying out digital collections on file or object storage. It is designed with long-term preservation principles in mind, does not rely on specialised software and avoids the problem of locking data collections into monolithic repositories behind APIs.</p>
+<p class="my-4">OCFL is a specification for laying out digital collections on file or object storage. It is designed with long-term preservation principles in mind; does not rely on specialised software and avoids the problem of locking data collections into monolithic repositories behind APIs.</p>
+<div class="my-8">
 <img src="/assets/images/ocfl.png" alt="A cartoon representing an OCFL repository as a set of parallel fields containing lumps representing data payloads" />
-<p class="my-4">An <strong>OCFL Repository</strong> is a system of directories laid out on a filesystem using a prescribed layout. Each repository contains one or more <strong>OCFL Objects</strong>. An object contains an inventory and a set of versioned content directories.</p>
-<p class="my-4">The metadata describing an OCFL object’s inventory and versions is stored as simple JSON files which are both human- and machine-readable, and can be processed with lightweight scripts.</p>
-<p class="my-4">The structure inside the content directories is not specified, so any existing collection of files can be deposited into an OCFL repository and later re-exported with its structure preserved.</p>
-<p class="my-4">OCFL places no restrictions on the file formats of object contents.</p>
-<p class="my-4">OCFL provides:</p>
+</div>
+<ul class="ml-10 list-disc">
+<li class="">An <strong>OCFL Repository</strong> is a system of directories laid out on a filesystem using a prescribed layout. Each repository contains one or more <strong>OCFL Objects</strong>. An object contains an inventory and a set of versioned content directories.</li>
+<li class="">The metadata describing an OCFL object's inventory and versions is stored as simple JSON files which are both human- and machine-readable, and can be processed with lightweight scripts.</li>
+<li class="">The structure inside the content directories is not specified, so any existing collection of files can be deposited into an OCFL repository and later re-exported with its structure preserved.</li>
+<li class="">OCFL places no restrictions on the file formats of object contents.</li>
+</ul>
+<div class="mt-8"></div>
+<h2 id="ocfl-provides" class="text-1xl font-semibold">OCFL provides <a class="direct-link text-yellow-700 hover:underline" href="#ocfl-provides"></a></h2>
 <ul class="ml-10 list-disc">
 <li class="">Robustness against file errors and data corruption</li>
 <li class="">Efficient versioning and de-duplication</li>
-<li class="">Immutable data storage
-<br></li>
+<li class="">Immutable data storage</li>
 </ul>
+<div class="mt-8"></div>
 <h2 id="links" class="text-1xl font-semibold">Links <a class="direct-link text-yellow-700 hover:underline" href="#links"></a></h2>
 <ul class="ml-10 list-disc">
 <li class=""><a href="https://ocfl.io/" class="text-yellow-700 hover:underline">OCFL website</a></li>
 <li class=""><a href="https://ocfl.io/1.0/spec/" class="text-yellow-700 hover:underline">OCFL Specification v1.0</a></li>
-<li class=""><a href="https://github.com/uts-eresearch/ocfl-js" class="text-yellow-700 hover:underline">ocfl-js - a Node library for working with OCFL objects</a>
-<br></li>
 </ul>
+<div class="mt-8"></div>
 <h2 id="example" class="text-1xl font-semibold">Example <a class="direct-link text-yellow-700 hover:underline" href="#example"></a></h2>
 <p class="my-4">Here is a simplified view of an OCFL repository containing two objects, one of which has two versions and one with three:</p>
-<ul class="ml-10 list-disc">
-<li class="">OCFL repository
-<ul class="ml-10 list-disc">
-<li class="">Object A
-<ul class="ml-10 list-disc">
-<li class="">inventory</li>
-<li class="">v1
-<ul class="ml-10 list-disc">
-<li class="">inventory</li>
-<li class="">content</li>
-</ul>
-</li>
-<li class="">v2
-<ul class="ml-10 list-disc">
-<li class="">inventory</li>
-<li class="">content</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="">Object B
-<ul class="ml-10 list-disc">
-<li class="">v1
-<ul class="ml-10 list-disc">
-<li class="">inventory</li>
-<li class="">content</li>
-</ul>
-</li>
-<li class="">v2
-<ul class="ml-10 list-disc">
-<li class="">inventory</li>
-<li class="">content</li>
-</ul>
-</li>
-<li class="">v3
-<ul class="ml-10 list-disc">
-<li class="">inventory</li>
-<li class="">content</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<pre class="bg-black text-white p-8">
+-   OCFL repository
+    -   Object A
+        -   inventory
+        -   v1
+            -   inventory
+            -   content
+        -   v2
+            -   inventory
+            -   content
+    -   Object B
+        -   v1
+            -   inventory
+            -   content
+        -   v2
+            -   inventory
+            -   content
+        -   v3
+            -   inventory
+            -   content
+</pre>
 
     </div>
+
+    
 </div>
 
                 </div>

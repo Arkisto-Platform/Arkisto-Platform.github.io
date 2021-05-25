@@ -8,8 +8,13 @@
             name="Description"
             content=""
         />
-        <link rel="stylesheet" href="/assets/tailwind.css" />
-        <link rel="stylesheet" href="/assets/site.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.1/tailwind.min.css"
+            integrity="sha512-BAK6UB671tmfzrkeH1CacTvgHQ3aLAFnT2KsigdATsc5X7+3u42tb5vjmAoDiqtxphP5dNZ3cDygivTsGEJhGw=="
+            crossorigin="anonymous"
+        />
+        <!-- <link rel="stylesheet" href="/assets/site.css" /> -->
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
@@ -63,11 +68,41 @@
 <div
     class=" hover:text-yellow-700 mt-2 lg:mt-6"
 >
+    <a href="/About/">About</a>
+</div>
+ 
+<div
+    class=" hover:text-yellow-700 mt-2 lg:mt-6"
+>
+    <a href="/standards/">Standards</a>
+</div>
+
+<div
+    class=" pl-4 text-base my-1 hover:text-yellow-700"
+>
+    <a href="/standards/ocfl/">Storage</a>
+</div>
+
+<div
+    class=" pl-4 text-base my-1 hover:text-yellow-700"
+>
+    <a href="/standards/ro-crate/">Packaging</a>
+</div>
+
+<div
+    class=" pl-4 text-base my-1 hover:text-yellow-700"
+>
+    <a href="/standards/arcp/">Identifiers</a>
+</div>
+ 
+<div
+    class=" hover:text-yellow-700 mt-2 lg:mt-6"
+>
     <a href="/case-studies/">Case Studies</a>
 </div>
 
 <div
-    class="text-black  pl-4 text-base my-1 hover:text-yellow-700"
+    class="text-yellow-700  pl-4 text-base my-1 hover:text-yellow-700"
 >
     <a href="/case-studies/paradisec/">PARADISEC</a>
 </div>
@@ -94,30 +129,6 @@
     class=" hover:text-yellow-700 mt-2 lg:mt-6"
 >
     <a href="/use-cases/">Use Cases</a>
-</div>
- 
-<div
-    class=" hover:text-yellow-700 mt-2 lg:mt-6"
->
-    <a href="/standards/">Standards</a>
-</div>
-
-<div
-    class=" pl-4 text-base my-1 hover:text-yellow-700"
->
-    <a href="/standards/ocfl/">Storage</a>
-</div>
-
-<div
-    class=" pl-4 text-base my-1 hover:text-yellow-700"
->
-    <a href="/standards/ro-crate/">Packaging</a>
-</div>
-
-<div
-    class=" pl-4 text-base my-1 hover:text-yellow-700"
->
-    <a href="/standards/arcp/">Identifiers</a>
 </div>
  
 <div
@@ -164,8 +175,8 @@
 
     <div>
         <h1 id="status%3A-live" class="text-2xl font-bold">Status: LIVE <a class="direct-link text-yellow-700 hover:underline" href="#status%3A-live"></a></h1>
-<p class="my-4"><a href="https://www.paradisec.org.au/" class="text-yellow-700 hover:underline">PARADISEC</a> (the Pacific And Regional Archive for Digital Sources in Endangered Cultures) has operated a data curation service for endangered languages for 18 years. Currently consisting of 500,000 files in 28,624 items and 574 collections, there is over 90TB of data under management. The repository, whilst still functional and fit for purpose, is showing signs of its age. Using the <em>Arkisto Platform</em>, the Modern PARADISEC project is updating the catalog whilst also enabling a path for smaller regional repositories to exist and to easily move their content across collections and institutions.</p>
-<p class="my-4">The <a href="http://115.146.80.165" class="text-yellow-700 hover:underline">Modern PARADISEC demonstrator</a>, developed with previous funding from the <a href="https://ardc.edu.au/" class="text-yellow-700 hover:underline">ARDC</a>, demonstrates the use of RO-Crate to describe the collections and items and store those items within an OCFL system. The demonstrator includes an elastic search service and a webserver but the key feature is that the it keeps working with only the filesystem and a webserver.</p>
+<p class="my-4"><a href="https://www.paradisec.org.au/" class="text-yellow-700 hover:underline">PARADISEC - Pacific And Regional Archive for Digital Sources in Endangered Cultures</a> has been operating for 18 years and currently holds material in 1,270 languages across Australia and the Pacific. The archive contains over 115TB of content including more than 14,000 hours of audio recordings, 1,600 hours of video and 8,000 transcriptions. It is a facility that acts as an archive of research recordings as well as forming an integral part of the research workflow in which primary data is made citable, is preserved, and is publicised (with licence agreements) for access.</p>
+<p class="my-4">The <a href="http://mod.paradisec.org.au" class="text-yellow-700 hover:underline">Modern PARADISEC demonstrator</a>, developed with previous funding from the <a href="https://ardc.edu.au/" class="text-yellow-700 hover:underline">ARDC</a>, demonstrates the use of RO-Crate to describe the collections and items and store those items within an OCFL system. The demonstrator includes an elastic search service and a webserver but the key feature is that the it keeps working with only the filesystem and a webserver.</p>
 <div class="flex flex-col space-y-4 lg:flex-row lg:space-y-0 lg:space-x-4 my-10">
   <div class="flex flex-col border-2 p-4 rounded justify-center">
       <div class="w-full px-10">
@@ -210,6 +221,8 @@ Media players - linking transcripts to media (granular citation of media for res
 </ul>
 
     </div>
+
+    
 </div>
 
                 </div>
